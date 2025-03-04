@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Species Identification</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        canvas { display: none; }
+        video { width: 100%; max-width: 600px; }
+    </style>
+</head>
+<body>
+    <h1>UK Species Identification</h1>
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas" width="224" height="224"></canvas>
+    <h2 id="result">Loading model...</h2>
+</body>
+</html>
